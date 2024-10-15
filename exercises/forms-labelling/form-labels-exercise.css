@@ -1,0 +1,133 @@
+/* TODO fix styles for exercise file */
+body {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin: 0;
+    padding:2rem;
+    background-color:#114c2a;
+}
+
+main {
+    background-color: #C9E4C5;
+    color: #000060;
+    padding: 2rem;
+}
+
+header, footer {
+    background-color:#114c2a ;
+    color: #C9E4C5;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Remove default stying for fieldset */
+fieldset {
+    margin: 0;
+    margin-bottom:2rem;
+    padding: 0;
+    border: none;
+}
+
+
+input[type="text"], input[type="date"], select {
+    border: 2px solid #114c2a;
+    border-radius: 5px;
+    width: 50%;
+    min-width: 200px;
+    height: 2rem;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+textarea {
+    border: 2px solid #114c2a;
+    border-radius: 5px;
+    width: 50%;
+    min-width: 200px;
+    height: 10rem;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+select {
+    margin-bottom: 2rem;
+}
+
+label, .form-label {
+    margin-top:2rem;
+    margin-bottom: 0;
+}
+
+.input-container {
+    display: flex;
+    align-items: bottom;
+}
+.radio-label {
+    margin-top: 10px;
+    margin-left: 6px;
+}
+
+.checkbox-label {
+    margin-top:8px;
+    margin-left:5px;
+}
+
+.textAreaContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top:1rem;
+}
+    
+input[type="radio"], input[type="checkbox"]{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+h2, legend {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+/* Styling the date input */
+input::-webkit-datetime-edit, input[type="date" i]::-webkit-calendar-picker-indicator {
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+.submit {
+    color: #000060;
+    background-color: #FAEBE0;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    width: 10rem;
+    border: 2px solid #114c2a;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 480px)  {
+    body {
+        padding: 2rem 0.5rem;
+    }
+
+    h2, legend {
+        font-size:1.5rem;
+    }
+
+    label {
+        margin-top: 0.5rem;
+    }
+}

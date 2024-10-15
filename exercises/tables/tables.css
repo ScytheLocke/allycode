@@ -1,0 +1,262 @@
+body {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin: 0;
+    padding:2rem;
+    background-color:#114c2a;
+}
+
+main {
+    background-color: #C9E4C5;
+    color: #000060;
+    padding: 2rem;
+}
+
+header, footer {
+    background-color:#114c2a ;
+    color: #C9E4C5;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2, legend {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+.skipLink {
+    color: #C9E4C5;
+    opacity: 0;
+}
+
+.skipLink:focus {
+    opacity: 1;
+}
+
+/* Table styles */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #000060;
+    min-width: 580px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+td, tr, th {
+    border: 2px solid #000060;
+    padding: 0.5rem;
+    background-color: #C9E4C5;
+}
+
+th {
+    background-color: #114c2a;
+    color: #C9E4C5;
+}
+
+caption {
+    margin-bottom: 1rem;
+}
+
+.second-table {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.table-container {
+    border-right: 2px solid #000060;
+    width: 100%;
+}
+
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 2px solid #000060;
+}
+
+.table-cell-group {
+    display: flex;
+}
+
+.table-cell {
+    width: 16.666%;
+    border-right: 2px solid #000060;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.double-table-cell {
+    width: calc(28.5714% - 4px);
+}
+
+.table-cell-2 {
+    width: 14.2857%;
+    border-right: 2px solid #000060;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.table-header-cell {
+    background-color: #114c2a;
+    color: #C9E4C5;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.table-cell-last {
+    border-right: none;
+}
+
+.left-cell {
+    border-left: 2px solid #000060;
+}
+
+.last-row {
+    border-bottom: 2px solid #000060;
+}
+
+/* grid table with complex headers */
+
+.grid-table {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 2fr 5fr;
+    border: 2px solid #000060;
+}
+
+.grid-col-1 {
+    border-right: 2px solid #000060;
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-col-1-row-1 {
+    background-color: #114c2a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #000060;
+}
+
+.grid-col-row-2 {
+    display: grid;
+    width:100%;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 2px solid #000060;
+}
+
+.grid-col-2 {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-col-2-row-1 {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    border-left: 2px solid #000060;
+}
+
+.grid-col-2-row-1-upper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 3fr 2fr;
+}
+
+.grid-col-2-row-1-lower {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+     border-top: 2px solid #000060;
+}
+
+.grid-cell-senior {
+    border-top: 2px solid #000060;
+}
+.grid-col-2-row-2 {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(2, 1fr);
+    border-top: 2px solid #000060;
+}
+
+.grid-col-2-row-2-upper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    border-bottom: 2px solid #000060;
+}
+
+.grid-col-2-row-2-lower {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-col-1-row-2 {
+    background-color: #114c2a;
+}
+.grid-col-1-row-2-right {
+    background-color: #114c2a;
+}
+
+.grid-cell {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.border-right {
+    border-right: 2px solid #000060;
+}
+
+.border-left {
+    border-left: 2px solid #000060;
+}
+
+.grid-header-cell {
+    color: #C9E4C5;
+    background-color: #114c2a;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 600px)  {
+   /* TBD */
+}
+
+@media screen and (max-width: 850px)  {
+   /* TBD */
+}
+
+@media screen and (max-width: 480px)  {
+    body {
+        padding: 2rem 0.5rem;
+    }
+
+    h2 {
+        font-size:1.5rem;
+    }
+}

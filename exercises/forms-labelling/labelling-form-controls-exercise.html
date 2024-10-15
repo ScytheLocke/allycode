@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <head>
+        <link rel="stylesheet" href="./form-labels-exercise.css">
+        <title>exercise - Labelling form controls</title>
+    </head>
+    <body>
+        <header>
+            <h1>Summer Camp Registration</h1>
+        </header>
+        <!-- Instructions: -->
+        <!-- 1. Review the code for form labelling issues, for both individual form controls and group labels. -->
+        <!-- 2. Feel free to use a tool like Axe devtools as an additional resource. -->
+        <!-- 3. Update the code with HTML and/or ARIA solutions such that all form controls and groups of form controls are programmatically labelled. -->
+        <!-- BONUS: Verify your results with a screen reader! -->
+        <main id="main">
+    
+            <form>
+                <h2>Camper Information</h2>
+    
+                <span class="form-label">First Name (required)</span>
+                <input type="text" id="firstName" class="firstName" required autocomplete="given-name">
+             
+                <span class="form-label">Last Name (required)</span>
+                <input type="text" id="lastName" required autocomplete="family-name">
+          
+                <p class="form-label">Preferred/Chosen Name</p>
+                <input type="text">
+                
+                <label>Birthday (required, yyyy-mm-dd)</label>
+                <input type="date" required>
+         
+                <label>Tell us about you! Hobbies, interests, whatever you'd like to share</label>
+                <textarea cols="30" rows="10"></textarea>
+    
+                <label>Have you been to camp before?</label>
+                <select name="campExperience">
+                    <option value="">Please choose an option</option>
+                    <option value="yesThisCamp">Yes, this camp</option>
+                    <option value="yesAnotherCamp">Yes, another camp</option>
+                    <option value="no">No, this is my first year</option>
+                </select>
+
+                <fieldset>
+               
+                    <p>Sleep accommodations</p>
+                    <div class="accomodationContainer">
+                        <div>
+                            <input type="radio" name="accommodation" checked>
+                            <label>Tent</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" name="accommodation" id="cabin">
+                            <label>Cabin</label>
+                        </div>
+
+                        <div class="input-container">
+                            <input type="radio" name="accommodation">
+                            <p class="form-label radio-label">Lodge</p>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <p>Dietary restrictions</p>
+                    <div class="dietContainer">
+                        <div>
+                            <input type="checkbox" name="diet" checked>
+                            <label>No dietary restrictions</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="diet">
+                            <label>Vegan</label>
+                        </div>
+                        <div class="input-container">
+                            <input type="checkbox" name="diet">
+                            <span class="checkbox-label">Vegetarian</span>
+                        </div>
+    
+                        <div class="input-container">
+                            <input type="checkbox" name="diet">
+                            <span class="checkbox-label">Kosher</span>
+                        </div>
+    
+                        <div class="input-container">
+                            <input type="checkbox" name="diet">
+                            <p class="checkbox-label">Halal</p>
+                        </div>
+    
+                        <div class="input-container">
+                            <input type="checkbox" name="diet">
+                            <div class="checkbox-label">Gluten Free</div>
+                        </div>
+    
+                        <div class="input-container">
+                            <input type="checkbox" name="diet">
+                            <p class="checkbox-label">Allergies</p>
+                        </div>
+                        
+                        <div class="textAreaContainer">
+                            <label>Tell us about your allergies and any medications you take</label>
+                            <textarea cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <input id="submit" type="submit" value="Submit" class="submit">
+
+            </form>
+        </main>
+
+        <footer class="contact">
+            <p>&copy 2022 Deque </p>
+        </footer>
+    </body>
+</HTML>

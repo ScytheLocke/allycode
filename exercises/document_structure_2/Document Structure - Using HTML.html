@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <head>
+        <style>
+           body {
+            font-size: 1.2rem;
+	        font-family: sans-serif;
+            }         
+            .instructions {
+                border: 1px solid #aaaaaa;
+                margin: 0px 30px 30px 30px;
+                padding: 0px 10px 0px 10px;
+                background-color: #eeeeee;
+            }
+            .xlarge {
+            font-size: 2rem;
+            }
+            .large {
+            font-size: 1.5rem;
+            }
+
+            #header, #footer {
+            background-color: #ddd;
+            }
+            #header, #footer, #main {
+            padding: 1rem;
+            margin: .25rem;
+            }
+            #main {
+            border: 1px solid #ccc;
+            }
+ 
+        </style>
+        <title>Document Structure - Using HTML</title>
+    </head>
+    <body>
+        <div class="instructions">
+            <h3>Instructions</h3>
+            <ol>
+              <li>View the page structure including:
+                <ul>
+                  <li>Sections/landmarks</li>
+                  <li>Headings</li>
+                  <li>Link text</li>
+                  <li>Lists</li>
+                </ul>
+              </li>
+              <li>Identify accessibility issues in the code</li>
+              <li>See if you can find all 8 issues!</li>
+            </ol>
+                  
+          <div id="header">
+            <div>Widgetville</div>
+            <div id="header-nav">
+              <span><a href="https://www.deque.com/company/our-team/">Our Team</a> | </span>
+              <span><a href="https://www.deque.com/customers/">Our Customers</a> | </span>
+              <span><a href="https://www.deque.com/company/contact/">Contact</a></span>
+            </div>
+          </div>
+          
+          <div id="main">
+            <p class="xlarge">Welcome to Widgetville</p>
+            <p class="large">Research: 73% of Accessibility Professionals See Increase in Accessibility Awareness on Digital Channels Throughout the Pandemic</p>
+            <p>Latest Deque report underscores the impact of COVID-19 on digital accessibility, noting an impact on volume of work, budget, users with disabilities and digital services</p>
+            <p>By Deque Systems November 16, 2021</p>
+            <p><a target="_blank" href="https://www.deque.com/blog/covid-19-pandemic-still-impacting-digital-accessibility/">Read More</a></p>
+          
+            <p class="large">3 Overlooked but Useful axe DevTools Extension Tips</p>
+            <p>Three tips and tricks that will take your use of the axe DevTools to the next level. Level Up!</p>
+            <p>By Josh McClure November 30, 2021</p>
+            <p><a href="https://www.deque.com/blog/3-overlooked-but-useful-axe-devtools-extension-tips/">Read More</a></p>
+          
+          </div>
+          
+          <div id="footer">
+            <div id="social-links">
+              <span>Connect with us:</span>
+              <span><a href="https://www.facebook.com/dequesystems/">Facebook</a> | </span>
+              <span><a href="https://twitter.com/dequesystems">Twitter</a> | </span>
+              <span><a href="https://www.linkedin.com/company/deque-systems-inc">Linkedin</a></span>
+            <div id="footer-links">
+              <span>Those links Legal requires us to post:</span>
+              <span><a href="terms.html">Terms of use</a> | </span>
+              <span><a href="privacy.html">Privacy</a> | </span>
+              <span><a href="accessibility.html">Accessibility</a></span>
+            </div>
+          </div>
+    </body>
+</HTML>

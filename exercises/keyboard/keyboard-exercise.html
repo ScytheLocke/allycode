@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <head>
+        <link rel="stylesheet" href="./keyboard.css">
+        <title>exercise - Keyboard</title>
+    </head>
+    <!-- Instructions: -->
+    <!-- 1. Use your keyboard to interact with the webpage. -->
+    <!-- 2. Identify the keyboard accessibility issues -->
+    <!-- 3. Fix the issues in the HTML and/or CSS -->
+    <!-- 4. Retest with your keyboard -->
+    <!-- Tip: don't forget to navigate in both directions and click around with your mouse. Try testing with a screen reader as well if you feel comfortable! -->
+    <body>
+        <header>
+            <a href="#main" class="skipLink">Skip to main content</a>
+            <h1 tabindex="0">Chess Club</h1>
+        </header>
+
+        <main id="main">
+            <h2 tabindex="0">About Our Chess Club</h2>
+            <p>Camp Opeongo is a place where we celebrate exercising our bodies and our minds! We encourage all campers whether experienced or brand new to Chess to come out and try a game! We have knowledgeable staff to help you understand the rules of the game and a weekly tournament!</p>
+            <h2 tabindex="0">Tournament Information</h2>
+            <p>On the last day of camp (Fridays) we will have a tournament for all players who sign up, grouped by level. If you are not sure of your level or are new to Chess we can help you figure out your level by the end of the week.</p>
+            <form novalidate>
+                <h3 tabindex="0">Tournament Sign Up</h3>
+                <label for="firstName">First Name</label>
+                <input tabindex="-1" type="text" name="firstName" id="firstName" autocomplete="given-name">
+                <label for="lastName">Last Name</label>
+                <input tabindex="-1" type="text" name="lastName" id="lastName" autocomplete="family-name">
+                <label for="level">Level</label>
+                <select class="select" name="level" id="level">
+                    <option value="notSure">not sure</option>
+                    <option value="beginner">beginner</option>
+                    <option value="intermediate">intermediate</option>
+                    <option value="advanced">advanced</option>
+                </select>    
+                <div class="submit" onclick="alert('submitted')">Submit</div>
+            </form>
+            <h2 tabindex="0">Learn more about chess</h2>
+            <ul>
+                <li><a tabindex="1" href="https://www.chess.com/learn-how-to-play-chess">How to play Chess - 7 rules to get you started</a></li>
+                <li><a href="https://www.wikihow.com/Play-Chess-for-Beginners">A beginner's guide to playing chess: Basic rules and tips to get you started</a></li>
+                <li><a tabindex="2" href="https://www.chess.com/forum/view/general/13-amazing-facts-about-chess#:~:text=There%20are%20over%209%20million,electrons%20in%20the%20observable%20universe.">13 Amazing Facts About Chess</a></li>
+                <li><a href="https://thechessworld.com/articles/general-information/40-facts-about-chess-most-people-dont-know/">40 Facts About Chess that most people don't know</a></li>
+                <li><a class="link">Deep Blue - the chess playing computer</a></li>
+            </ul>
+        </main>
+
+        <footer class="contact">
+            <p>&copy 2022 Deque </p>
+        </footer>
+    </body>
+</HTML>

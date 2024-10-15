@@ -1,0 +1,67 @@
+<!-- TODO: -->
+<!-- Validate with a screen reader -->
+<!DOCTYPE html>
+<HTML lang="en">
+    <head>
+        <link rel="stylesheet" href="./tabs.css">
+        <script src="tabs.js"></script>
+        <title>exercise - Tabs</title>
+    </head>
+   <!-- Instructions: -->
+    <!-- 1. Add all of the missing ARIA attributes to this tab widget. -->
+    <!-- 2. Validate the results with using keyboard navigation with a screen reader -->
+    <!-- Tips: For keyboard navigation Use the tab key to reach the group of tabs and the arrow keys to navigate between tabs. We recommend referencing the ARIA Authoring Practices tabs demo for more information:
+    -->
+    <body>
+        <header>
+            <a href="#main" class="skipLink">Skip to main content</a>
+            <h1>Sports</h1>
+        </header>
+        <main id="main">
+            <h2 id="sportsHeading">Sports Activity Details</h2>
+            <div class="tabContainer">
+                <div class="tabList">
+                    <button class="tab" id="tab1" aria-controls="tabpanel1" aria-selected="true">Team Sports</button>
+                    <button class="tab" id="tab2" aria-controls="tabpanel2" aria-selected="false" tabindex="-1">Aquatics</button>
+                    <button class="tab" id="tab3"  aria-controls="tabpanel3" aria-selected="false" tabindex="-1">Archery</button>
+                    <button class="tab" id="tab4" aria-controls="tabpanel4" aria-selected="false" tabindex="-1">Horseback riding</button>
+                </div>
+                <div class="tabpanelVisible" id="tabpanel1" tabindex="0">
+                    <h3>Team sports - Details</h3>
+                    <ul>
+                        <li>All team try outs will take place Mondays on the soccer field</li>
+                        <li>Bring comfortable clothes and water to drink</li>
+                        <li>All teams are co-ed</li>
+                    </ul>
+                </div>
+                <div class="tabpanelHidden" id="tabpanel2" tabindex="0">
+                    <h3>Aquatics - Details</h3>
+                    <ul>
+                        <li>Swimming lessons held every morning at 10 am</li>
+                        <li>Swim team try outs will take place Mondays at 1 pm</li>
+                        <li>All swimmers must shower before entering the pool</li>
+                    </ul>
+                </div>
+                <div class="tabpanelHidden" id="tabpanel3" tabindex="0">
+                    <h3>Archery - Details</h3>
+                    <ul>
+                        <li>Please ensure your parent or guardian has signed the special waiver</li>
+                        <li>All archers must be 12 years old and up</li>
+                        <li>Equipment rentals available at the front desk</li>
+                    </ul>
+                </div>
+                <div class="tabpanelHidden" id="tabpanel4" tabindex="0">
+                    <h3>Horseback Riding - Details</h3>
+                    <ul>
+                        <li>Riders must wear a helmet and boots</li>
+                        <li>All riders must be 10 years old and up</li>
+                        <li>Riders will be evaluated and place in groups based on their level</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer class="contact">
+            <p>&copy 2022 Deque </p>
+        </footer>
+    </body>
+</HTML>
