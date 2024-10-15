@@ -1,0 +1,166 @@
+body {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin: 0;
+    padding:2rem;
+    background-color:#114c2a;
+    width: 100%;
+}
+
+main {
+    background-color: #C9E4C5;
+    color: #000060;
+    padding: 2rem;
+}
+
+header, footer {
+    background-color:#114c2a ;
+    color: #C9E4C5;
+}
+
+/* Note: opacity is just one way of handling the visiblilty of the link. We would not want to use a technique like display:none as this would remove the link from the keyboard focus order */
+
+.skipLink {
+    color: #C9E4C5;
+    opacity: 0;
+}
+
+.skipLink:focus {
+    opacity: 1;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2, legend {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+/* Gallery styles */
+
+.gallery-header {
+    height:50rem;
+}
+
+.hero-image {
+    margin-top: 1rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/dock_on_lake.jpg");
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    color: #114c2a;
+}
+
+.hero-text-solution {
+    background-color: rgba(255,255,255,0.6);
+}
+  
+.gallery-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.gallery-container img {
+    max-width: 26.666rem;
+    height: 40rem;
+    margin-bottom: 2rem;
+}
+
+.css-bg-img {
+    width: 26.666rem;
+    height: 40rem;
+    background-image: url(./assets/girl_with_binoculars.jpg); 
+    background-size: contain;
+}
+
+.instagram-logo, .twitter-logo {
+    height: 3rem;
+    width: 3rem;
+}
+
+.game-night-container-exercise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.monopoly-container {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.game-night-container-exercise img {
+    width: 50%;
+    margin: 2rem;
+}
+
+.game-night-container-solution {
+    display:flex;
+    justify-content: center;
+    padding:2rem;
+    width: 100%;
+}
+
+.game-night-link {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.game-night-container-solution img {
+    width: 50%;
+    margin: 2rem;
+}
+@media screen and (min-width: 600px)  {
+   
+    .gallery-container img {
+        max-width: 34rem;
+        height: 25rem;
+        margin-bottom: 2rem;
+    }
+
+    .css-bg-img {
+        width: 16.666rem;
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width: 480px)  {
+    body {
+        padding: 2rem 0.5rem;
+    }
+    
+    .gallery-container img, .css-bg-img {
+        max-width: 100%;
+        height: 20rem;
+        margin-bottom: 2rem;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+    }
+}

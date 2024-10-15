@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <head>
+        <link rel="stylesheet" href="./validation-on-submit.css">
+        <script src="./validation-on-submit-solution.js"></script>
+        <title>solution - Validation on submit</title>
+    </head>
+    <!-- Note: more solution comments in the JS file -->
+    <body>
+        <header>
+            <a href="#main" class="skipLink">Skip to main content</a>
+            <h1>Summer Camp Registration</h1>
+        </header>
+
+        <main id="main">
+            <form novalidate>
+                <h2>Camper Information</h2>
+
+                <label for="firstName">First Name (required)</label>
+                <!-- Solution: Used the aria-describedby attribute to associate the input with the error text. Note: using aria-labelledby is incorrect as this would mean the label itself is no longer announced.-->
+                <input type="text" id="firstName" class="firstName" aria-describedby="firstNameError" required autocomplete="given-name">
+                <span id="firstNameError" class="formError"></span>
+                
+                <label for="lastName">Last Name (required)</label>
+                <!-- Solution: Used the aria-describedby attribute to associate the input with the error text. Note: using aria-labelledby is incorrect as this would mean the label itself is no longer announced.-->
+                <input type="text" id="lastName" required aria-describedby="lastNameError" autocomplete="family-name">
+                <span id="lastNameError" class="formError"></span>
+
+                <label for="chosenName">Preferred/Chosen Name</label>
+                <input type="text" id="chosenName">
+
+                <label for="birthday">Birthday (required, yyyy-mm-dd)</label>
+                <!-- Solution: Used the aria-describedby attribute to associate the input with the error text. Note: using aria-labelledby is incorrect as this would mean the label itself is no longer announced.-->
+                <input type="date" id="birthday" required aria-describedby="dateError">
+                <span id="dateError" class="formError"></span>
+
+                <label for="moreInfo">Tell us about you! Hobbies, interests, whatever you'd like to share</label>
+                <textarea id="moreInfo" cols="30" rows="10"></textarea>
+
+                <label for="campExperience">Have you been to camp before?</label>
+                <select name="campExperience" id="campExperience">
+                    <option value="">Please choose an option</option>
+                    <option value="yesThisCamp">Yes, this camp</option>
+                    <option value="yesAnotherCamp">Yes, another camp</option>
+                    <option value="no">No, this is my first year</option>
+                </select>
+                <fieldset>
+                    <legend>Sleep accommodations</legend>
+                    <div class="accomodationContainer">
+                        <div>
+                            <input type="radio" name="accommodation" id="tent" checked>
+                            <label for="tent">Tent</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" name="accommodation" id="cabin">
+                            <label for="cabin">Cabin</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" name="accommodation" id="lodge">
+                            <label for="lodge">Lodge</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dietary restrictions</legend>
+                    <div class="dietContainer">
+                        <div>
+                            <input type="checkbox" name="diet" id="noRestrictions" checked>
+                            <label for="noRestrictions">No dietary restrictions</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="diet" id="vegan">
+                            <label for="vegan">Vegan</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="diet" id="vegetarian">
+                            <label for="vegetarian">Vegetarian</label>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" name="diet" id="kosher">
+                            <label for="kosher">Kosher</label>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" name="diet" id="halal">
+                            <label for="halal">Halal</label>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" name="diet" id="glutenFree">
+                            <label for="glutenFree">Gluten Free</label>
+                        </div>
+    
+                        <div>
+                            <input type="checkbox" name="diet" id="allergies">
+                            <label for="allergies">Allergies</label>
+                        </div>
+                        
+                        <div class="textAreaContainer">
+                            <label for="allergyDescription">Tell us about your allergies and any medications you take</label>
+                            <textarea id="allergyDescription" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <input id="submit" type="submit" value="Submit" class="submit">
+
+            </form>
+        </main>
+
+        <footer class="contact">
+            <p>&copy 2022 Deque </p>
+        </footer>
+    </body>
+</HTML>

@@ -1,0 +1,109 @@
+body {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin: 0;
+    padding:2rem;
+    background-color:#114c2a;
+}
+
+main {
+    background-color: #C9E4C5;
+    color: #000060;
+    padding: 2rem;
+}
+
+header, footer {
+    background-color:#114c2a ;
+    color: #C9E4C5;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+    
+/* Note: opacity is just one way of handling the visiblilty of the link. We would not want to use a technique like display:none as this would remove the link from the keyboard focus order */
+
+.skipLink {
+    color: #C9E4C5;
+    opacity: 0;
+}
+
+.skipLink:focus {
+    opacity: 1;
+}
+
+
+/* Form styles */
+
+input[type="text"], input[type="date"], select {
+    border: 2px solid #114c2a;
+    border-radius: 5px;
+    width: 50%;
+    min-width: 200px;
+    height: 2rem;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+select {
+    margin-bottom: 2rem;
+}
+
+/* Solution: Deleted this style to allow for a visible focus state */
+/* .select {
+    outline:none;
+} */
+
+label {
+    margin-top:2rem;
+}
+
+.submit {
+    color: #000060;
+    background-color: #FAEBE0;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    width: 10rem;
+    border: 2px solid #114c2a;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+legend {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.link {
+    color: rgb(0, 0, 238);
+    text-decoration: underline;
+
+}
+
+
+@media screen and (max-width: 480px)  {
+    body {
+        padding: 2rem 0.5rem;
+    }
+
+    h2, legend {
+        font-size:1.5rem;
+    }
+
+    label {
+        margin-top: 0.5rem;
+    }
+}

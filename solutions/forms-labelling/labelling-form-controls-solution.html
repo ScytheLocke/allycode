@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <head>
+        <link rel="stylesheet" href="./form-labels-exercise.css">
+        <title>solution - labelling form controls</title>
+    </head>
+    <body>
+        <header>
+            <h1>Summer Camp Registration</h1>
+        </header>
+
+        <main id="main">
+            <form>
+                <h2>Camper Information</h2>
+                <!-- Solution: span refactored to label element with for/id relationship -->
+                <!-- Alternative solution: aria-labelledby on input pointint to span by id reference -->
+                <label for="firstName">First Name (required)</label>
+                <input type="text" id="firstName" class="firstName" required autocomplete="given-name">
+                
+                <!-- Solution: span refactored to label element with for/id relationship -->
+                <!-- Alternative solution (shown): aria-labelledby on input pointint to span by id reference -->
+                <span class="form-label" id="lastName">Last Name (required)</span>
+                <input type="text" id="lastName" required aria-labelledby="lastName" autocomplete="family-name">
+
+                <!-- Solution: p refactored to label element with for/id relationship -->
+                <!-- Alternative solution: aria-labelledby on input pointint to span by id reference -->
+                <label for="chosenName">Preferred/Chosen Name</label>
+                <input type="text" id="chosenName">
+
+                <!-- Solution: for/id relationship -->
+                <label for="birthday">Birthday (required, yyyy-mm-dd)</label>
+                <input type="date" id="birthday" required>
+
+                <!-- Solution: for/id relationship -->
+                <label for="moreInfo">Tell us about you! Hobbies, interests, whatever you'd like to share</label>
+                <textarea id="moreInfo" cols="30" rows="10"></textarea>
+
+                <!-- Solution: for/id relationship -->
+                <label for="campExperience">Have you been to camp before?</label>
+                <select name="campExperience" id="campExperience">
+                    <option value="">Please choose an option</option>
+                    <option value="yesThisCamp">Yes, this camp</option>
+                    <option value="yesAnotherCamp">Yes, another camp</option>
+                    <option value="no">No, this is my first year</option>
+                </select>
+
+
+                <fieldset>
+                    <!-- Solution: p refactored to legend element -->
+                    <legend>Sleep accommodations</legend>
+                    <div class="accomodationContainer">
+                        <div>
+                            <!-- for/id relationship -->
+                            <input type="radio" name="accommodation" id="tent" checked>
+                            <label for="tent">Tent</label>
+                        </div>
+    
+                        <div>
+                            <!-- Solution: for/id relationship -->
+                            <input type="radio" name="accommodation" id="cabin">
+                            <label for="cabin">Cabin</label>
+                        </div>
+
+                        <div>
+                            <!-- Solution: p refactored to label element with for/id relationship -->
+                            <!-- Alternative solution: aria-labelledby on input pointint to span by id reference -->
+                            <input type="radio" name="accommodation" id="lodge">
+                            <label for="lodge">Lodge</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset role="group" aria-labelledby="dietGroupLabel">
+                    <!-- Solution: p refactored to legend element -->
+                    <!-- Alternate solution (shown): add role="group" and  -->
+                    <p id="dietGroupLabel">Dietary restrictions</p>
+                    <div class="dietContainer">
+                        <div>
+                            <!-- Solution: for/id relationship -->
+                            <input type="checkbox" name="diet" id="noRestrictions" checked>
+                            <label for="noRestrictions">No dietary restrictions</label>
+                        </div>
+                        <div>
+                            <!-- Solution: for/id relationship -->
+                            <input type="checkbox" name="diet" id="vegan">
+                            <label for="vegan">Vegan</label>
+                        </div>
+                        <div>
+                            <!-- Solution: span refactored to label element with for/id relationship -->
+                            <!-- Alternative solution: aria-labelledby on input pointint to span by id reference -->
+                            <input type="checkbox" name="diet" id="vegetarian">
+                            <label for="vegetarian">Vegetarian</label>
+                        </div>
+    
+                        <div>
+                            <!-- Solution: span refactored to label element with for/id relationship -->
+                            <!-- Alternative solution: aria-labelledby on input pointint to span by id reference -->
+                            <input type="checkbox" name="diet" id="kosher">
+                            <label for="kosher">Kosher</label>
+                        </div>
+    
+                        <div>
+                            <!-- Solution: p refactored to label element with for/id relationship -->
+                            <!-- Alternative solution: aria-labelledby on input pointint to span by id reference -->
+                            <input type="checkbox" name="diet" id="halal">
+                            <label for="halal">Halal</label>
+                        </div>
+    
+                        <div>
+                            <!-- Solution: div refactored to label element with for/id relationship -->
+                            <!-- Alternative solution: aria-labelledby on input pointint to span by id reference -->
+                            <input type="checkbox" name="diet" id="glutenFree">
+                            <label for="glutenFree">Gluten Free</label>
+                        </div>
+    
+                        <div>
+                            <!-- Solution: p refactored to label element with for/id relationship -->
+                            <!-- Alternative solution: aria-labelledby on input pointint to span by id reference -->
+                            <input type="checkbox" name="diet" id="allergies">
+                            <label for="allergies">Allergies</label>
+                        </div>
+                        
+                        <div class="textAreaContainer">
+                            <!-- Solution: for/id relationship -->
+                            <label for="allergyDescription">Tell us about your allergies and any medications you take</label>
+                            <textarea id="allergyDescription" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <input id="submit" type="submit" value="Submit" class="submit">
+
+            </form>
+        </main>
+
+        <footer class="contact">
+            <p>&copy 2022 Deque </p>
+        </footer>
+    </body>
+</HTML>

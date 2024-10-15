@@ -1,0 +1,116 @@
+t<!DOCTYPE html>
+<HTML lang="en">
+-    <head>
+        <link rel="stylesheet" href="./tables.css">
+        <title>solution - Arts and Music</title>
+    </head>
+    <body>
+        <header>
+            <a href="#main" class="skipLink">Skip to main content</a>
+            <h1>Arts and Music</h1>
+        </header>
+
+        <main id="main">
+            <p>Please see the information below about scheduling and auditions and placements. Fridays will be dedicated to the final performaces and an art show for families to attend.</p>
+
+            <!-- Solution: Table markup used to create the proper structure and announcements. Note that far less CSS is needed too! -->
+            <table>
+                <caption>Arts and Music Schedule</caption>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <th scope="col">Monday</th>
+                        <th scope="col">Tuesday</th>
+                        <th scope="col">Wednesday</th>
+                        <th scope="col">Thursday</th>
+                        <th scope="col">Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">9:00 am</th>
+                        <td>Band</td>
+                        <td>Choir</td>
+                        <td>Orchestra</td>
+                        <td>Orchestra</td>
+                        <td>Dress rehearsal</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10:00 am</th>
+                        <td>Strings</td>
+                        <td>Dance</td>
+                        <td>Choir</td>
+                        <td>Dance</td>
+                        <td>Art show set up</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11:00 am</th>
+                        <td>Art studio</td>
+                        <td>Art studio</td>
+                        <td>Art studio</td>
+                        <td>Art studio</td>
+                        <td>Award ceremony</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1:00 pm</th>
+                        <td>Cullinary arts</td>
+                        <td>Creative writing</td>
+                        <td>Cullinary arts</td>
+                        <td>Creative writing</td>
+                        <td>Concert</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2:00 pm</th>
+                        <td>Studio time</td>
+                        <td>Creative lab</td>
+                        <td>Studio time</td>
+                        <td>Creative lab</td>
+                        <td>Art show</td>
+                    </tr>
+                </tbody>
+            </table>
+
+             <!-- Solution: Table markup used to create the proper structure and announcements including row headers, and headers that span multiple rows and columns. Note that far less CSS is needed too! -->
+            <table class="second-table">
+                <caption>Auditions and placements</caption>
+                <thead>
+                    <tr>
+                        <td colspan="2" rowspan="2"></td>
+                        <th colspan="3" scope="colgroup">Instruments</th>
+                        <th colspan="2" scope="colgroup">Art Options</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">Woodwinds</th>
+                        <th scope="col">Percussion</th>
+                        <th scope="col">Strings</th>
+                        <th scope="col">Painting</th>
+                        <th scope="col">Sculpture</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup" rowspan="2">Age category</th>
+                        <th scope="row">Junior campers</th>
+                        <td>Monday 9 am</td>
+                        <td>Monday 9 am</td>
+                        <td>Monday 10 am</td>
+                        <td>Submit portfolio</td>
+                        <td>Submit portfolio</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Senior campers</th>
+                        <td>Monday 9 am</td>
+                        <td>Monday 9 am</td>
+                        <td>Monday 10 am</td>
+                        <td>Submit portfolio</td>
+                        <td>Submit portfolio</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer class="contact">
+            <p>&copy 2022 Deque </p>
+        </footer>
+    </body>
+</HTML>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <head>
+        <link rel="stylesheet" href="./keyboard-solution.css">
+        <title>solution - Keyboard</title>
+    </head>
+    <body>
+        <header>
+            <a href="#main" class="skipLink">Skip to main content</a>
+            <!-- Solution: removed tabindex="0" -->
+            <h1>Chess Club</h1>
+        </header>
+
+        <main id="main">
+            <!-- Solution: removed tabindex="0" -->
+            <h2>About Our Chess Club</h2>
+            <p>Camp Opeongo is a place where we celebrate exercising our bodies and our minds! We encourage all campers whether experienced or brand new to Chess to come out and try a game! We have knowledgeable staff to help you understand the rules of the game and a weekly tournament!</p>
+            <!-- Solution: removed tabindex="0" -->
+            <h2>Tournament Information</h2>
+            <p>On the last day of camp (Fridays) we will have a tournament for all players who sign up, grouped by level. If you are not sure of your level or are new to Chess we can help you figure out your level by the end of the week.</p>
+            <form novalidate>
+                <!-- Solution: removed tabindex="0" -->
+                <h3>Tournament Sign Up</h3>
+                <label for="firstName">First Name</label>
+                <!-- Solution: removed tabindex="-1" -->
+                <input type="text" name="firstName" id="firstName" autocomplete="given-name">
+                <label for="lastName">Last Name</label>
+                <!-- Solution: removed tabindex="-1" -->
+                <input type="text" name="lastName" id="lastName" autocomplete="family-name">
+                <label for="level">Level</label>
+                <!-- Solution: deleted CSS that supressed visible focus style -->
+                <select name="level" id="level">
+                    <option value="notSure">not sure</option>
+                    <option value="beginner">beginner</option>
+                    <option value="intermediate">intermediate</option>
+                    <option value="advanced">advanced</option>
+                </select>    
+                <!-- Solution: used an HTML input type="submit" which is natively reachable and operable by keyboard -->
+                <input id="submit" type="submit" value="Submit" class="submit" onclick="alert('submitted')">  
+            </form>
+             <!-- Solution: removed tabindex="0" -->
+            <h2>Learn more about chess</h2>
+            <ul>
+                 <!-- Solution: removed tabindex="1" -->
+                <li><a href="https://www.chess.com/learn-how-to-play-chess">How to play Chess - 7 rules to get you started</a></li>
+                <li><a href="https://www.wikihow.com/Play-Chess-for-Beginners">A beginner's guide to playing chess: Basic rules and tips to get you started</a></li>
+                 <!-- Solution: removed tabindex="2" -->
+                <li><a href="https://www.chess.com/forum/view/general/13-amazing-facts-about-chess#:~:text=There%20are%20over%209%20million,electrons%20in%20the%20observable%20universe.">13 Amazing Facts About Chess</a></li>
+                <li><a href="https://thechessworld.com/articles/general-information/40-facts-about-chess-most-people-dont-know/">40 Facts About Chess that most people don't know</a></li>
+                <!-- Solution: added an href attribite to the link -->
+                <li><a href="https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)">Deep Blue - the chess playing computer</a></li>
+            </ul>
+        </main>
+
+        <footer class="contact">
+            <p>&copy 2022 Deque </p>
+        </footer>
+    </body>
+</HTML>

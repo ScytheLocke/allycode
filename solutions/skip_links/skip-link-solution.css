@@ -1,0 +1,227 @@
+/* TODO: Delete unused styles */
+body {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    margin: 0;
+    padding:2rem;
+    background-color:#114c2a;
+}
+
+main {
+    background-color: #C9E4C5;
+    color: #000060;
+    padding: 2rem;
+}
+
+header, footer {
+    background-color:#114c2a ;
+    color: #C9E4C5;
+}
+
+.home-page-hero {
+    max-width: 100%;
+}
+
+/* Solution: added styles to the skip link when it has focus */
+
+/* Note: opacity is just one way of handling the visiblilty of the link. We would not want to use a technique like display:none or visiability:hidden as this would remove the link from the keyboard focus order */
+
+.skipLink {
+    color: #C9E4C5;
+    opacity: 0;
+}
+
+.skipLink:focus {
+    opacity: 1;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.desktopNavigation {
+    display: none;
+}
+    
+.hamburgerBtn {
+    display: flex;
+    flex-direction: column;
+    background-color: #C9E4C5;
+    border: 2px solid #114c2a;
+    border-radius: 5px;
+    padding: 4px;
+}
+    
+.mobileNavigation {
+    display: none;
+    line-height: 1.6;
+}
+
+.navText {
+    align-self: center;
+}
+
+.showMobileNavigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    margin-top:0.5rem;
+}
+
+.mobileNavContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.hamburgerBar {
+    width: 35px;
+    height: 5px;
+    margin: 3px;
+    background-color:#114c2a;
+}
+
+nav a {
+    color:#C9E4C5;
+    text-underline-offset: 0.3rem;
+}
+
+nav a[aria-current="page"]{
+    text-decoration: underline #C9E4C5 0.3rem;
+    text-underline-offset: 0.3rem;
+}
+
+.linkStyleButton {
+    color: #C9E4C5;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.subMenu {
+    z-index: 1;
+}
+
+.hideSubMenu {
+    display: none;
+}
+
+.showSubMenu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    color:#114c2a;
+    background-color: #C9E4C5;
+    border-radius: 5px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.hideMobileSubMenu {
+    display: none;
+}
+
+.showMobileSubMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    list-style: none;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    color: #C9E4C5;
+}
+
+.mobileSubMenuContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.arrowDown {
+    border: solid #C9E4C5;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    margin-left: 0.5rem;
+    height: 0.25rem;
+    width:0.25rem;
+}
+   
+.arrowUp {
+    border: solid #C9E4C5;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(225deg);
+    margin-left: 0.5rem;
+    height: 0.25rem;
+    width:0.25rem;
+    margin-bottom: -0.3rem;
+}
+
+.showSubMenu a {
+    color: #114c2a;
+    margin-bottom: 0.5rem;
+}
+
+.showSubMenu li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h2 {
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 600px)  {
+    .desktopNavigation {
+        display: flex;
+        justify-content: space-between;
+        width: 40%;
+    }
+    .hamburgerBtn {
+        display: none;
+    }
+
+    .mobileNavigation {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 850px)  {
+    .desktopNavigation {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 480px)  {
+    body {
+        padding: 2rem 0.5rem;
+    }
+
+    h2{
+        font-size:1.5rem;
+    }
+}

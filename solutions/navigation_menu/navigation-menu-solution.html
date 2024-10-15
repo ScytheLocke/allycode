@@ -1,0 +1,110 @@
+<!-- Note: some solution comments are in the JS and CSS files too! -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./navigation-menu-solution.css">
+    <script src="./navigation-menu-solution.js"></script>
+    <title>solution - Navigation Menu</title>
+</head>
+<body>
+    <header>
+        <a href="#main" class="skipLink">Skip to main content</a>
+        <div class="navContainer">
+            <nav id="desktopNavigation" class="desktopNavigation">
+                <a href="./navigation-menu-solution.html" id="home" class="navLink">Home</a>
+                <div class="subMenuContainer">
+                    <!-- Solution: Added the aria-expanded attribute and toggle the true/false values in the JavaScript, added the aria-controls attribute associated with the id of the subMenu -->
+                    <button 
+                    class="linkStyleButton subMenuLinkSibling" 
+                    aria-expanded="false" 
+                    aria-controls="subMenu" 
+                    id="subMenuTrigger">Activities<span class="arrowContainer"><i class="arrowDown" id="arrow"></i></span></button>
+                    <!-- Solution: Updated the CSS to hide the subMenu from assistive technology when the menu is closed, not just visually hiding it. -->
+                    <ul class="hideSubMenu" id="subMenu">
+                        <li><a href="https://dequeuniversity.com/" class="subMenuLink navLink">Sports</a></li>
+                        <li><a href="https://dequeuniversity.com/" class="subMenuLink navLink">Arts and Music</a></li>
+                        <li><a href="https://dequeuniversity.com/" class="subMenuLink navLink">Chess club</a></li>
+                    </ul>
+                </div>
+                <a href="https://dequeuniversity.com/" id="gallery" class="navLink">Gallery</a>
+                <a href="https://dequeuniversity.com/" id="registration" class="navLink">Registration</a>
+            </nav>
+            <div class="mobileNavContainer">
+                 <!-- Solution: Added the aria-expanded attribute and toggle the true/false values in the JavaScript, added the aria-controls attribute associated with the id of the mobileNavigation -->
+                <button 
+                class="hamburgerBtn" 
+                id="hamburgerBtn" 
+                aria-label="main navigation" 
+                aria-expanded="false" 
+                aria-controls="mobileNavigation">
+                    <span class="hamburgerBar"></span>
+                    <span class="hamburgerBar"></span>
+                    <span class="hamburgerBar"></span>
+                    <span class="navText" id="navText">menu</span>
+                </button>
+                <!-- Solution: Updated the CSS to hide the mobileNavigation from assistive technology when the menu is closed, not just visually hiding it.-->
+                <nav id="mobileNavigation" class="mobileNavigation">
+                    <a href="./navigation-menu-solution.html" class="navLink">Home</a>
+                    <div class="mobileSubMenuContainer">
+                        <button 
+                        class="linkStyleButton subMenuLinkSibling" aria-expanded="false" 
+                        aria-controls="mobileSubMenu" id="mobileSubMenuTrigger">Activities<span class="arrowContainer"><i class="arrowDown" id="arrow"></i></span></button>
+                        <ul class="hideMobileSubMenu" id="mobileSubMenu">
+                            <li><a href="https://dequeuniversity.com/" class="subMenuLink navLink">Sports</a></li>
+                            <li><a href="https://dequeuniversity.com/" class="subMenuLink navLink">Arts and Music</a></li>
+                            <li><a href="https://dequeuniversity.com/" class="subMenuLink navLink">Chess club</a></li>
+                        </ul>
+                    </div>
+                    <a href="https://dequeuniversity.com/" class="navLink">Gallery</a>
+                    <a href="https://dequeuniversity.com/" class="navLink">Registration</a>
+                </nav>
+            </div>
+        </div>
+        <h1>Welcome to Camp Opeongo!</h1>
+        <!-- Image credit: Opeongo Store, Algonquin Park -->
+        <img class="home-page-hero" src="./assets/Opeongo-Store-2016.jpeg" alt="Lake Opeongo Canoe store, a log cabin building on a bright sunny day in summer. There are many colorful canoes set up outside and there are 3 canoers in the water.">
+    </header>
+    <main id="main">
+        <h2>About our camp</h2>
+        <p>Camp Opeongo is located on beautiful <a href="https://www.algonquinpark.on.ca/visit/camping/lake-opeongo-access-point.php">Lake Opeongo</a> in the heart of Algonquin Park. Campers can expect a fun range of activities and all of the beauty this national park has to offer.</p>
+        <p>Camp Opeongo launched in 2022 with a committment to diversity, inclusion and belonging. Please let us know if there is anything we can do to make your stay feel more welcoming and safe. We pride ourselves on offering fully accessible activities for all campers, so be sure to let us know if you have any accessibility needs we should be aware of.</p>
+
+        <h2>Registration process</h2>
+        <ol>
+            <li>Submit your camper's application on our <a href="https://dequeuniversity.com/">registration</a> page</li>
+            <li>We will review your application and follow up with any questions we have</li>
+            <li>Once all applications have been submitted we will contact the guardians of registered participants to collect a non-refundable deposit</li>
+            <li>Paying the deposit secures your camper's spot!</li>
+        </ol>
+         
+        <h2>Packing list</h2>
+        <p>Here's what we recommend bringing to camp. You are welcome to bring other personal belongings, but please no snacks as the wild animals will definitely find them! We have a well stocked kitchen and will accommodate all dietary preferences and restrictions.</p>
+        <h3>All participants</h3>
+        <ul>
+            <li>Clothes including warm pants and sweaters incase the temperature drops</li>
+            <li>Rain gear including a jacket, rain pants and rain boots</li>
+            <li>Stationary for writing home</li>
+            <li>A comfortable pillow (we have our own supply too)</li>
+            <li>Sunscreen, sun glasses and a hat</li>
+        </ul>
+        <h3>Musicians</h3>
+        <ul>
+            <li>Your instrument (we can arrange a loaned instrument)</li>
+            <li>Instrument case</li>
+            <li>Your favorite music piece for auditions</li>
+        </ul>
+        <h3>Canoers (optional, we have our own gear to loan)</h3>
+        <ul>
+            <li>Your personal life jacket</li>
+            <li>Your personal paddel</li>
+            <li>Your personal fishing equipment</li>
+        </ul>
+    </main>
+    <footer class="contact">
+        <p>&copy 2022 Deque </p>
+    </footer>
+</body>
+</html>
