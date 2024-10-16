@@ -1,42 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-    </head>
-    <body>
-        <h1 id="developer-course-resources">Developer Course
-        Resources</h1>
-        <p>This is a list of links to resources we mentioned in
-        class.</p>
-        <h2 id="automated-testing">Automated Testing</h2>
-        <ul>
-        <li><a
-        href="https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter">Axe
-        Accessibility Linter</a>) - located on the Visual Studio
-        Marketplace</li>
-        <li><a href="https://www.deque.com/axe/browser-extensions/">Axe
-        Dev Tools Extension Links</a> - provides links to the Axe Dev
-        Tools extension for Chrome, Edge, and Firefox</li>
-        <li><a
-        href="https://www.deque.com/axe/core-documentation/integrations/">Axe-core
-        Integrations for various Testing Frameworks</a></li>
-        <li><a
-        href="https://timdeschryver.dev/blog/setting-up-cypress-with-axe-for-accessibility#set-up">Setting
-        up Axe-core with Cypress</a></li>
-        </ul>
-        <h2 id="keyboard">Keyboard</h2>
-        <p>If you are using native HTML interactive elements, you will
-        not need to build in the keyboard interactions. YYour code will
-        just need to respond to the events those keyboard interactions
-        trigger.</p>
-        <p>For example, pressing enter or spacebar on a button (or
-        clicking with the mouse or performing a tap gesture on a touch
-        device) will all trigger a click event for a button. Your code
-        just needs to react to the click event.</p>
-        <ul>
-        <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/">Design
-        Patterns - ARIA Authoring Practice Guide (APG)</a></li>
-        </ul>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Course Resources</title>
+</head>
+<body>
+    <header>
+        <h1>Developer Course Resources</h1>
+        <p>A curated list of resources mentioned during the course to support your development of accessible web applications.</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="automated-testing">
+            <h2 id="automated-testing">Automated Testing</h2>
+            <ul>
+                <li><a href="https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter" target="_blank" rel="noopener">Axe Accessibility Linter</a> - Available on the Visual Studio Marketplace.</li>
+                <li><a href="https://www.deque.com/axe/browser-extensions/" target="_blank" rel="noopener">Axe Dev Tools Extension Links</a> - Download the Axe Dev Tools extension for Chrome, Edge, and Firefox.</li>
+                <li><a href="https://www.deque.com/axe/core-documentation/integrations/" target="_blank" rel="noopener">Axe-core Integrations for Various Testing Frameworks</a> - Documentation on integrating Axe-core with popular testing frameworks.</li>
+                <li><a href="https://timdeschryver.dev/blog/setting-up-cypress-with-axe-for-accessibility#set-up" target="_blank" rel="noopener">Setting Up Axe-core with Cypress</a> - A guide for setting up Axe-core for accessibility testing in Cypress.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="frameworks">
+            <h2 id="frameworks">Framework-Specific Accessibility Resources</h2>
+
+            <h3>React</h3>
+            <ul>
+                <li><a href="https://reactjs.org/docs/accessibility.html" target="_blank" rel="noopener">React Accessibility Docs</a> - Official React documentation on building accessible React applications.</li>
+                <li><a href="https://www.deque.com/axe/devtools/axe-devtools-react/" target="_blank" rel="noopener">Axe DevTools for React</a> - Tools and guides for integrating Axe with React projects.</li>
+                <li><a href="https://react-spectrum.adobe.com/react-aria/" target="_blank" rel="noopener">React ARIA</a> - A library of React hooks for building accessible design systems.</li>
+                <li><a href="https://cauldron.dequelabs.com/" target="_blank" rel="noopener">Cauldron</a> - A robust, accessible component library for React applications.</li>
+                <li><a href="https://testing-library.com/docs/react-testing-library/intro" target="_blank" rel="noopener">Testing Library for React</a> - Guidance on testing accessibility with React using the Testing Library.</li>
+            </ul>
+
+            <h3>Vue</h3>
+            <ul>
+                <li><a href="https://v3.vuejs.org/guide/a11y-basics.html" target="_blank" rel="noopener">Vue Accessibility Guide</a> - Official guide for building accessible applications in Vue.</li>
+                <li><a href="https://www.deque.com/axe/devtools/axe-devtools-vue/" target="_blank" rel="noopener">Axe DevTools for Vue</a> - Tools and guides for integrating Axe with Vue projects.</li>
+                <li><a href="https://github.com/vue-a11y" target="_blank" rel="noopener">Vue A11y</a> - A collection of plugins and tools for improving accessibility in Vue applications.</li>
+                <li><a href="https://testing-library.com/docs/vue-testing-library/intro" target="_blank" rel="noopener">Vue Accessibility Testing with Testing Library</a> - Guidance on testing Vue components for accessibility.</li>
+            </ul>
+
+            <h3>Angular</h3>
+            <ul>
+                <li><a href="https://angular.io/guide/accessibility" target="_blank" rel="noopener">Angular Accessibility Guide</a> - Official Angular documentation on accessibility best practices.</li>
+                <li><a href="https://www.deque.com/axe/devtools/axe-devtools-angular/" target="_blank" rel="noopener">Axe DevTools for Angular</a> - Tools and guides for integrating Axe with Angular projects.</li>
+                <li><a href="https://material.angular.io/cdk/a11y/overview" target="_blank" rel="noopener">Angular CDK A11y</a> - Accessibility features from Angular’s Component Dev Kit (CDK) for creating accessible components.</li>
+                <li><a href="https://testing-library.com/docs/angular-testing-library/intro" target="_blank" rel="noopener">Testing Library for Angular</a> - Guidance on testing accessibility with Angular using the Testing Library.</li>
+                <li><a href="https://accessibility.deque.com/angular-accessibility-webinar" target="_blank" rel="noopener">Angular Accessibility Webinar</a> - A detailed webinar focused on accessibility in Angular applications.</li>
+                <li><a href="https://www.deque.com/blog/angular-component-libraries-and-accessibility/" target="_blank" rel="noopener">Angular Component Libraries and Accessibility</a> - A blog post discussing the accessibility of Angular component libraries.</li>
+                <li><a href="https://youtu.be/Gm_bD1abFXI?si=htoDPW2Ikd7THDMR" target="_blank" rel="noopener">Building Accessible Angular Applications</a> - A YouTube video guide on making Angular applications accessible.</li>
+                <li><a href="https://youtu.be/d6FJg2MW-lI?si=qzWLe-Sy6PoiPfd7" target="_blank" rel="noopener">Common Angular Accessibility Pitfalls</a> - A YouTube video on common accessibility challenges in Angular and how to address them.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="general-resources">
+            <h2 id="general-resources">General Resources for JavaScript Frameworks</h2>
+            <ul>
+                <li><a href="https://www.deque.com/blog/accessible-routing-in-javascript-frameworks/" target="_blank" rel="noopener">Accessible Routing in JavaScript Frameworks</a> - A guide to implementing accessible routing in various JavaScript frameworks.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="accessibility-reference">
+            <h2 id="accessibility-reference">General Accessibility Reference</h2>
+            <ul>
+                <li><a href="https://www.smashingmagazine.com/category/accessibility/" target="_blank" rel="noopener">Smashing Magazine - Accessibility</a> - A comprehensive collection of articles, tutorials, and best practices on web accessibility.</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="keyboard">
+            <h2 id="keyboard">Keyboard</h2>
+            <p>
+                Using native HTML interactive elements ensures built-in keyboard interactions. Your code should respond to the events triggered by these interactions.
+            </p>
+            <p>
+                For example, pressing Enter or Spacebar on a button (as well as clicking with a mouse or tapping on a touch device) will trigger a click event. Ensure your code reacts appropriately to these events.
+            </p>
+            <ul>
+                <li><a href="https://www.w3.org/WAI/ARIA/apg/patterns/" target="_blank" rel="noopener">Design Patterns - ARIA Authoring Practice Guide (APG)</a> - Guidelines for creating accessible patterns using ARIA.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2022 Developer Course Resources</p>
+    </footer>
+</body>
 </html>

@@ -11,7 +11,7 @@ This is a list of links to resources we mentioned in class.
 
 ## Keyboard
 
-If you are using native HTML interactive elements, you will not need to build in the keyboard interactions. YYour code will just need to respond to the events those keyboard interactions trigger.
+If you are using native HTML interactive elements, you will not need to build in the keyboard interactions. Your code will just need to respond to the events those keyboard interactions trigger.
 
 For example, pressing enter or spacebar on a button (or clicking with the mouse or performing a tap gesture on a touch device) will all trigger a click event for a button. Your code just needs to react to the click event.
 
