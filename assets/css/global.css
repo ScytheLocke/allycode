@@ -193,8 +193,8 @@ input[type="tel"]:focus {
 .btn-outline-dark:hover,
 .btn-outline-dark:focus {
   color: #fff; /* Change to white for better contrast */
-  background: #333; /* Darker background for better contrast */
-  border-color: #333; /* Match the border with the background */
+  background: #003366; /* Darker background for better contrast */
+  border-color: #003366; /* Match the border with the background */
 }
 
 .btn-success {
@@ -224,7 +224,7 @@ input[type="tel"]:focus {
 }
 .btn-main:hover,
 .btn-main:focus {
-  background: #444; /* A slightly lighter black for the hover state */
+  background: #003366; /* A slightly lighter black for the hover state */
   color: #fff; /* Keep the text color white for good contrast */
 }
 
@@ -234,7 +234,7 @@ input[type="tel"]:focus {
 .btn-transparent:focus,
 .btn-solid-border:hover,
 .btn-solid-border:focus {
-  background: #444; /* Consistent background for hover state */
+  background: #003366; /* Consistent background for hover state */
   color: #fff; /* Ensures high contrast */
 }
 
