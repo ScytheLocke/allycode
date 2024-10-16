@@ -223,7 +223,7 @@ input[type="tel"]:focus {
   margin-right: 0.4rem;
 }
 .btn-main:hover,
-.btn-main:focus,{
+.btn-main:focus {
   background: #444; /* A slightly lighter black for the hover state */
   color: #fff; /* Keep the text color white for good contrast */
 }
