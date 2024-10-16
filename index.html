@@ -20,7 +20,7 @@
       href="./assets/images/favicon.png"
     />
 
-    <!-- bootstrap.min css -->
+    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="./assets/plugins/bootstrap/css/bootstrap.min.css"
@@ -28,10 +28,32 @@
 
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="./assets/css/global.css" />
+
+    <!-- SkipTo CSS and JS -->
+
+    <script>
+      var SkipToConfig =  {
+        'settings': {
+          'skipTo': {
+            landmarks: 'main, [role="main"], [role="search"], nav',
+            headings: 'main h1, main h2, main h3',
+            accesskey: 'S',
+            colorTheme: 'illinois',
+          }
+        }
+      };
+      </script>
+      
+    <link rel="stylesheet" href="./src/src/css/SkipTo.css">
+    <script src="./src/src/js/skipto.js"></script>
   </head>
 
   <body id="body">
-    <header class="page-header">
+    <!-- Skip Link for Basic Accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+    
+    <!-- Page Header -->
+    <header class="page-header" role="banner">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -43,9 +65,7 @@
               <ul>
                 <li>
                   <strong>NOTE:</strong> The look and feel of the following code
-                  samples are intentionally simplistic as their purpose is to
-                  provide the cleanest view and focus in on the accessibility of
-                  the code.
+                  samples are intentionally simplistic to focus on the accessibility of the code.
                 </li>
               </ul>
             </div>
@@ -54,71 +74,81 @@
       </div>
     </header>
 
-    <main class="container exercises mt-5">
-      <div class="card mb-3">
-        <div class="card-header">
-          <h2>Exercise: Keyboard Accessibility</h2>
-        </div>
-        <div class="card-body">
-          <p class="card-text">
-            Understand how to ensure your content is fully accessible for users
-            navigating with keyboards.
-          </p>
-          <a
-            role="button"
-            href="./exercises/keyboard.html"
-            class="btn btn-main btn-round-full"
-            ><p>Start Keyboard Exercise</p></a
-          ><a
-            role="button"
-            href="./solutions/keyboard.html"
-            class="btn btn-outline-dark btn-round-full"
-            ><p>Keyboard Exercise Solution</p></a
-          >
-        </div>
-      </div>
-
-      <div class="card mb-3">
-        <div class="card-header">
-          <h2>Exercise: Semantic HTML</h2>
-        </div>
-        <div class="card-body">
-          <p class="card-text">
-            Practice using semantic HTML elements to improve the accessibility
-            and structure of your web pages.
-          </p>
-          <a
-            role="button"
-            href="./exercises/semantics.html"
-            class="btn btn-main btn-medium btn-round-full"
-            ><p>Start Semantics Exercise</p></a
-          ><a
-            role="button"
-            href="./solutions/semantics.html"
-            class="btn btn-outline-dark btn-round-full"
-            ><p>Semantics Exercise Solution</p></a
-          >
-        </div>
-      </div>
-
+    <!-- Main Content Area -->
+    <main class="container exercises mt-5" id="main" role="main">
       <div class="card mb-3">
         <div class="card-header"><h2>Exercise: Images and Alt Text</h2></div>
         <div class="card-body">
           <p class="card-text">
-            Learn how to make images accessible with proper alt text and
-            descriptions for screen readers.
+            Improve the accessibility of images on a web page by providing meaningful descriptions and ensuring all visual elements are appropriately labeled.
           </p>
           <a
-            role="button"
-            href="./exercises/images.html"
+            href="./exercises/images/Images-exercise.html"
             class="btn btn-main btn-medium btn-round-full"
-            ><p>Start Images Exercise</p></a
-          ><a
-            role="button"
-            href="./solutions/images.html"
+            >Start Images Exercise</a>
+          <a
+            href="./solutions/images/Images-solution.html"
             class="btn btn-outline-dark btn-round-full"
-            ><p>Images Exercise Solution</p></a
-          >
+            >Images Exercise Solution</a>
+        </div>
+      </div>
+      
+      <div class="card mb-3">
+        <div class="card-header"><h2>Exercise: Keyboard Accessibility</h2></div>
+        <div class="card-body">
+          <p class="card-text">
+            Ensure that a web page is fully navigable using only the keyboard, providing a seamless experience for users who rely on keyboard navigation.
+          </p>
+          <a
+            href="./exercises/keyboard/keyboard-exercise.html"
+            class="btn btn-main btn-round-full"
+            >Start Keyboard Exercise</a>
+          <a
+            href="./solutions/keyboard/keyboard-solution.html"
+            class="btn btn-outline-dark btn-round-full"
+            >Keyboard Exercise Solution</a>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header"><h2>Exercise: Skip Links</h2></div>
+        <div class="card-body">
+          <p class="card-text">
+            Improve the accessibility of a webpage by adding a skip link, allowing users to bypass repetitive navigation and go directly to the main content.
+          </p>
+          <a
+            href="./exercises/skip_links/skip-link-exercise.html"
+            class="btn btn-main btn-medium btn-round-full"
+            >Start Skip Links Exercise</a>
+          <a
+            href="./solutions/skip_links/skip-link-solution.html"
+            class="btn btn-outline-dark btn-round-full"
+            >Skip Links Exercise Solution</a>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="card-header"><h2>Exercise: Document Structure</h2></div>
+        <div class="card-body">
+          <p class="card-text">
+            Enhance the accessibility and usability of a web page by reviewing its structure and implementing improvements.
+          </p>
+          <a
+            href="./exercises/document_structure/document-structure-exercise.html"
+            class="btn btn-main btn-medium btn-round-full"
+            >Start Document Structure Exercise</a>
+          <a
+            href="./solutions/document_structure/document-structure-exercise.html"
+            class="btn btn-outline-dark btn-round-full"
+            >Document Structure Exercise Solution</a>
+          <a
+            href="./exercises/document_structure_2/Document Structure - Using HTML.html"
+            class="btn btn-main btn-medium btn-round-full"
+            >Start Document Structure 2 Exercise</a>
+          <a
+            href="./solutions/document_structure_2/Document Structure - Using HTML.html"
+            class="btn btn-outline-dark btn-round-full"
+            >Document Structure Exercise 2 Solution</a>
         </div>
       </div>
 
@@ -126,46 +156,139 @@
         <div class="card-header"><h2>Exercise: Data Tables</h2></div>
         <div class="card-body">
           <p class="card-text">
-            Explore how to create accessible tables with proper structure,
-            headers, and descriptions.
+            Improve the accessibility of tables to ensure that they are properly structured and understandable for all users, including those using screen readers.
           </p>
           <a
-            role="button"
-            href="./exercises/tables.html"
+            href="./exercises/tables/tables-exercise.html"
             class="btn btn-main btn-medium btn-round-full"
-            ><p>Start Tables Exercise</p></a
-          ><a
-            role="button"
-            href="./solutions/tables.html"
+            >Start Tables Exercise</a>
+          <a
+            href="./solutions/tables/tables-solution.html"
             class="btn btn-outline-dark btn-round-full"
-            ><p>Tables Exercise Solution</p></a
-          >
+            >Tables Exercise Solution</a>
         </div>
       </div>
-
       <div class="card mb-3">
         <div class="card-header">
           <h2>Exercise: Accessible Forms</h2>
         </div>
         <div class="card-body">
           <p class="card-text">
-            Learn how to build accessible forms with proper labeling, fieldsets,
-            and input controls.
+            Ensure that form controls are properly labeled to provide a clear and accessible experience for all users.
           </p>
           <a
             role="button"
-            href="./exercises/forms.html"
+            href="./exercises/forms-labelling/labelling-form-controls-exercise.html"
             class="btn btn-main btn-medium btn-round-full"
             ><p>Start Forms Exercise</p></a
           ><a
             role="button"
-            href="./solutions/forms.html"
+            href="./solutions/forms-labelling/form-labels-exercise.css"
             class="btn btn-outline-dark btn-round-full"
             ><p>Forms Exercise Solution</p></a
           >
         </div>
       </div>
+
+        <div class="card mb-3">
+          <div class="card-header"><h2>Exercise: Errors on Submit</h2></div>
+          <div class="card-body">
+            <p class="card-text">
+              Improve form validation to ensure that users receive clear feedback when submitting a form with errors.
+            </p>
+            <a
+              role="button"
+              href="./exercises/errors-on_submit/Validation-on-submit-exercise.html"
+              class="btn btn-main btn-medium btn-round-full"
+              ><p>Start Errors on Submit Exercise</p></a>
+              <a
+              role="button"
+              href="./solutions/errors-on_submit/Validation-on-submit-solution.html"
+              class="btn btn-outline-dark btn-round-full"
+              ><p>Errors on Submit Exercise Solution</p></a>
+          </div>
+        </div>
+
+          <div class="card mb-3">
+            <div class="card-header"><h2>Exercise: Errors Inline</h2></div>
+            <div class="card-body">
+              <p class="card-text">
+                Enhance the user experience of a form by implementing accessible inline validation.
+              </p>
+              <a
+                role="button"
+                href="./exercises/errors-in_line/inline-validation-exercise.html"
+                class="btn btn-main btn-medium btn-round-full"
+                ><p>Start Errors Inline Exercise</p></a>
+                <a
+                role="button"
+                href="./solutions/errors-in_line/inline-validation-solution.html"
+                class="btn btn-outline-dark btn-round-full"
+                ><p>Errors Inline Exercise Solution</p></a>
+            </div>
+          </div>
+
+            <div class="card mb-3">
+              <div class="card-header"><h2>Exercise: Navigation Menu</h2></div>
+              <div class="card-body">
+                <p class="card-text">
+                  Improve the accessibility of a navigation menu, ensuring it is user-friendly for all users, including those using assistive technologies.
+                </p>
+                <a
+                  role="button"
+                  href="./exercises/navigation_menu/navigation-menu-exercise.html"
+                  class="btn btn-main btn-medium btn-round-full"
+                  ><p>Start Navigation Menu Exercise</p></a>
+                  <a
+                  role="button"
+                  href="./solutions/navigation_menu/navigation-menu-solution.html"
+                  class="btn btn-outline-dark btn-round-full"
+                  ><p>Navigation Menu Exercise Solution</p></a>
+              </div>
+            </div>
+
+                <div class="card mb-3">
+                  <div class="card-header"><h2>Exercise: Tabs</h2></div>
+                  <div class="card-body">
+                    <p class="card-text">
+                      Ensure that a tabbed interface is accessible and usable for all users, including those using screen readers or navigating with a keyboard.
+                    </p>
+                    <a
+                      role="button"
+                      href="./exercises/tabs/tabs-exercise.html"
+                      class="btn btn-main btn-medium btn-round-full"
+                      ><p>Start Tabs Exercise</p></a>
+                      <a
+                      role="button"
+                      href="./solutions/tabs/tabs-solution.html"
+                      class="btn btn-outline-dark btn-round-full"
+                      ><p>Tabs Exercise Solution</p></a>
+                  </div>
+                  </div>
+        </div>
+      </div>
     </main>
+
+    <!-- Page Footer -->
+    <footer class="contact" role="contentinfo">
+      <p>&copy; 2022 Deque</p>
+    </footer>
+
+    <!-- SkipTo Configuration -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        window.skipToConfig = {
+          settings: {
+            skipTo: {
+              landmarks: true,
+              headings: true,
+              accesskey: '0',
+              displayOption: 'popup'
+            }
+          }
+        };
+      });
+    </script>
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
