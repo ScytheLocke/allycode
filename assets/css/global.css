@@ -190,7 +190,8 @@ input[type="tel"]:focus {
   margin-right: 3rem;
   text-decoration: none;
 }
-.btn-outline-dark:hover {
+.btn-outline-dark:hover,
+.btn-outline-dark:focus {
   color: #fff; /* Change to white for better contrast */
   background: #333; /* Darker background for better contrast */
   border-color: #333; /* Match the border with the background */
@@ -221,14 +222,18 @@ input[type="tel"]:focus {
   vertical-align: middle;
   margin-right: 0.4rem;
 }
-.btn-main:hover {
+.btn-main:hover,
+.btn-main:focus,{
   background: #444; /* A slightly lighter black for the hover state */
   color: #fff; /* Keep the text color white for good contrast */
 }
 
 .btn-small:hover,
+.btn-small:focus,
 .btn-transparent:hover,
-.btn-solid-border:hover {
+.btn-transparent:focus,
+.btn-solid-border:hover,
+.btn-solid-border:focus {
   background: #444; /* Consistent background for hover state */
   color: #fff; /* Ensures high contrast */
 }
