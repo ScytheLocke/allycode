@@ -50,6 +50,23 @@
 
   <body id="body">
     
+    <!-- SkipTo Configuration -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Configure SkipTo settings
+        window.skipToConfig = {
+          settings: {
+            skipTo: {
+              landmarks: true,  // Include landmarks like header, main, and footer
+              headings: true,   // Include headings (e.g., h1, h2) in the SkipTo menu
+              accesskey: '0',   // Press '0' to activate the SkipTo menu
+              displayOption: 'popup'  // Show SkipTo as a popup overlay
+            }
+          }
+        };
+      });
+    </script>
+    
     <!-- Page Header -->
     <header class="page-header" role="banner">
       <div class="container">
@@ -272,21 +289,7 @@
       <p>&copy; 2022 Deque</p>
     </footer>
 
-    <!-- SkipTo Configuration -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        window.skipToConfig = {
-          settings: {
-            skipTo: {
-              landmarks: true,
-              headings: true,
-              accesskey: '0',
-              displayOption: 'popup'
-            }
-          }
-        };
-      });
-    </script>
+  
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
