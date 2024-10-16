@@ -116,8 +116,9 @@ a {
 a:focus,
 a:hover {
   text-decoration: none;
-  outline: 0;
-  color: #0d6efd;
+  color: #0056b3; /* A darker blue for better contrast when hovered */
+  background-color: #e9ecef; /* Light background to create a clear distinction */
+  outline: 2px solid #0056b3; /* Add an outline for focus visibility */
 }
 
 blockquote {
@@ -190,8 +191,9 @@ input[type="tel"]:focus {
   text-decoration: none;
 }
 .btn-outline-dark:hover {
-  color: black;
-  background: #fff;
+  color: #fff; /* Change to white for better contrast */
+  background: #333; /* Darker background for better contrast */
+  border-color: #333; /* Match the border with the background */
 }
 
 .btn-success {
@@ -219,12 +221,16 @@ input[type="tel"]:focus {
   vertical-align: middle;
   margin-right: 0.4rem;
 }
-.btn-main:hover,
+.btn-main:hover {
+  background: #444; /* A slightly lighter black for the hover state */
+  color: #fff; /* Keep the text color white for good contrast */
+}
+
 .btn-small:hover,
 .btn-transparent:hover,
 .btn-solid-border:hover {
-  background: black;
-  color: #fff;
+  background: #444; /* Consistent background for hover state */
+  color: #fff; /* Ensures high contrast */
 }
 
 .btn-solid-border {
