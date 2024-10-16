@@ -192,7 +192,7 @@ input[type="tel"]:focus {
 }
 .btn-outline-dark:hover,
 .btn-outline-dark:focus {
-  color: #fff; /* Change to white for better contrast */
+  color: #000; /* Change to white for better contrast */
   background: #333; /* Darker background for better contrast */
   border-color: #333; /* Match the border with the background */
 }
