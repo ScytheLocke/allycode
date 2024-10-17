@@ -1,4 +1,4 @@
-# Developer Course Resources
+# Deque Front-End Developer Course Resources
 
 A curated list of resources mentioned during the course to support your development of accessible web applications.
 
@@ -8,7 +8,11 @@ A curated list of resources mentioned during the course to support your developm
 - [Axe Dev Tools Extension Links](https://www.deque.com/axe/browser-extensions/) - Download the Axe Dev Tools extension for Chrome, Edge, and Firefox.
 - [Axe-core Integrations for Various Testing Frameworks](https://www.deque.com/axe/core-documentation/integrations/) - Documentation on integrating Axe-core with popular testing frameworks.
 - [Setting Up Axe-core with Cypress](https://timdeschryver.dev/blog/setting-up-cypress-with-axe-for-accessibility#set-up) - A guide for setting up Axe-core for accessibility testing in Cypress.
+
+## Additional Tools
 - [W3C Accessibility Evaluation Tools List](https://www.w3.org/WAI/test-evaluate/tools/list/) - A list of tools to evaluate the accessibility of your web applications.
+- [ANDI-Accessibility Testing Tool](https://www.ssa.gov/accessibility/andi/help/install.html) - ANDI is a bookmarklet that detects accessibility issues, reveals what screen readers should announce for interactive elements, and offers practical suggestions for improving accessibility and 508 compliance.
+- [Web Developer Tool Bar](https://chrispederick.com/work/web-developer/) - The Web Developer extension adds various web developer tools to a browser. The extension is available for Chrome, Edge, Firefox, and Opera, and will run on any platform that these browsers support including Windows, macOS and Linux.
 
 ## Framework-Specific Accessibility Resources
 
