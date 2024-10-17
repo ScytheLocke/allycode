@@ -1,15 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Developer Course Resources</title>
+<html lang="en">  <head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8" />
+  <title>
+    Developer Course Resources
+  </title>
+
+  <!-- Mobile Specific Metas -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+  />
+
+  <!-- Favicon -->
+  <link
+    rel="shortcut icon"
+    type="image/x-icon"
+    href="./assets/images/favicon.png"
+  />
+
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="./assets/plugins/bootstrap/css/bootstrap.min.css"
+  />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./assets/css/global.css" />
+
+  <!-- SkipTo CSS and JS -->
+
+  <script>
+    var SkipToConfig =  {
+      'settings': {
+        'skipTo': {
+          landmarks: 'main, [role="main"], [role="search"], nav',
+          headings: 'main h1, main h2, main h3',
+          accesskey: 'S',
+          colorTheme: 'illinois',
+          displayOption: 'popup'
+        }
+      }
+    };
+    </script>
+
+  <link rel="stylesheet" href="./src/src/css/SkipTo.css">
+  <script src="./src/src/js/skipto.js"></script>
 </head>
-<body>
-  <header>
-    <h1>Developer Course Resources</h1>
-    <p>A curated list of resources mentioned during the course to support your development of accessible web applications.</p>
+
+<body id="body">
+  
+  <!-- SkipTo Configuration -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Configure SkipTo settings
+      window.skipToConfig = {
+        settings: {
+          skipTo: {
+            landmarks: true,  // Include landmarks like header, main, and footer
+            headings: true,   // Include headings (e.g., h1, h2) in the SkipTo menu
+            accesskey: '0',   // Press '0' to activate the SkipTo menu
+            displayOption: 'popup'  // Show SkipTo as a popup overlay
+          }
+        }
+      };
+    });
+  </script>
+  
+  <!-- Page Header -->
+  <header class="page-header" role="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="content">
+            <h1 class="page-name">Developer Course Resources</h1>
+            <p>A curated list of resources mentioned during the course to support your development of accessible web applications.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
+<head>
 
   <main>
     <section>
@@ -113,5 +184,17 @@
       </ul>
     </section>
   </main>
+
+      <!-- Page Footer -->
+      <footer class="contact" role="contentinfo">
+        <a href="#main" class="skipLink">Skip back to top</a>
+        <a href="index.html">GitHub Exercise Page</a>
+        <a href="https://scythelocke.github.io/allycode/">GitHub Project</a>
+        <a href="resources.html">Developer Resources</a>
+        <a href="https://www.deque.com/resources/">Deque Resources</a>
+        <a href="https://dequeuniversity.com/resources/">Deque University Resources</a>
+        <p>&copy; 2024 Deque</p>
+      </footer>
+  
 </body>
 </html>
