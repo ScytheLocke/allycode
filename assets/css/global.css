@@ -536,3 +536,36 @@ card-footer,
 .skip-link:focus {
   top: 10px; /* Bring it back into view */
 }
+
+footer.contact {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f5f5f5; /* Light background for better contrast */
+}
+
+footer.contact a {
+  margin: 0 0.5rem;
+  color: #007bff; /* Link color */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer.contact a:hover {
+  text-decoration: underline;
+}
+
+footer.contact p {
+  margin: 0.5rem 0 0;
+  color: #333;
+}
+
+.skipLink {
+  display: block;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.skipLink:hover {
+  text-decoration: underline;
+}
