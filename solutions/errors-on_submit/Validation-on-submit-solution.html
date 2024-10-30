@@ -19,12 +19,14 @@
                 <label for="firstName">First Name (required)</label>
                 <!-- Solution: Used the aria-describedby attribute to associate the input with the error text. Note: using aria-labelledby is incorrect as this would mean the label itself is no longer announced.-->
                 <input type="text" id="firstName" class="firstName" aria-describedby="firstNameError" required autocomplete="given-name">
-                <span id="firstNameError" class="formError"></span>
+                <!-- Solution: Added aria-live assertive to the error span -->
+                <span id="firstNameError" class="formError" aria-live="assertive"></span>
                 
                 <label for="lastName">Last Name (required)</label>
                 <!-- Solution: Used the aria-describedby attribute to associate the input with the error text. Note: using aria-labelledby is incorrect as this would mean the label itself is no longer announced.-->
                 <input type="text" id="lastName" required aria-describedby="lastNameError" autocomplete="family-name">
-                <span id="lastNameError" class="formError"></span>
+                <!-- Solution: Added aria-live assertive to the error span -->
+                <span id="lastNameError" class="formError" aria-live="assertive"></span>
 
                 <label for="chosenName">Preferred/Chosen Name</label>
                 <input type="text" id="chosenName">
@@ -32,7 +34,8 @@
                 <label for="birthday">Birthday (required, yyyy-mm-dd)</label>
                 <!-- Solution: Used the aria-describedby attribute to associate the input with the error text. Note: using aria-labelledby is incorrect as this would mean the label itself is no longer announced.-->
                 <input type="date" id="birthday" required aria-describedby="dateError">
-                <span id="dateError" class="formError"></span>
+                <!-- Solution: Added aria-live assertive to the error span -->
+                <span id="dateError" class="formError" aria-live="assertive"></span>
 
                 <label for="moreInfo">Tell us about you! Hobbies, interests, whatever you'd like to share</label>
                 <textarea id="moreInfo" cols="30" rows="10"></textarea>
